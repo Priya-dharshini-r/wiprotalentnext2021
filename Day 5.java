@@ -47,8 +47,13 @@ class Result {
     for(int i=0;i<n;i++)
     {
         array[i]=a.nextInt();
+        
+    }
+      for(int i:array)
+    {
         sum=sum+array[i];
     }
+    
     return sum;
     
     }
