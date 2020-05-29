@@ -124,3 +124,53 @@ class Result {
 }
 
 public class Solution {
+  
+  //Powers of 2
+  
+  import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
+class Result {
+
+    /*
+     * Complete the 'isPower' function below.
+     *
+     * The function is expected to return an INTEGER_ARRAY.
+     * The function accepts INTEGER_ARRAY arr as parameter.
+     */
+
+    public static List<Integer> isPower(List<Integer> arr) {
+    // Write your code here
+        int n, sum = 0;
+        Scanner s = new Scanner(System.in);
+        n = s.nextInt();
+        int a[] = new int[n];
+        for(int i = 0; i < n; i++)
+        {
+            a[i] = s.nextInt();
+        }
+        if(a[i]==0)
+        {
+            return 0;
+            while(a[i]!=1)
+            {
+                if(a[i]%2!=0)
+                return 0;
+                a[i]/=2;
+            }
+        }
+  
+    }
+
+}
+public class Solution {
