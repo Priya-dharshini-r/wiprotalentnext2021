@@ -109,3 +109,56 @@ class Result {
 }
 
 public class Solution {
+
+    
+    //alphabetically sorting an array
+    
+    import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+import java.util.regex.*;
+import java.util.stream.*;
+import static java.util.stream.Collectors.joining;
+import static java.util.stream.Collectors.toList;
+
+
+class Result {
+
+    /*
+     * Complete the 'smallestString' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts STRING_ARRAY substrings as parameter.
+     */
+
+    public static String smallestString(List<String> substrings) {
+    // Write your code here
+    for(int i=0;i<n;i++)
+    {
+        for(int j=i+1;j<n;j++)
+        {
+            if(a[i]+a[j])compareTo(a[j]+a[i]>0);
+            {
+                String s= a[i];
+                a[i]=a[j];
+                a[j]=s;
+            }
+        }
+    }
+
+    }
+    static string lexSmallest(Strin a[],int n)
+    {
+        sort(a,n);
+        String answer=" ";
+        for(int i=0;i<n;i++)
+        answer+=a[i];
+        return answer;
+    }
+
+}
+public class Solution {
