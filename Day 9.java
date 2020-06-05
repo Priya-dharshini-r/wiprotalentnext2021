@@ -58,3 +58,58 @@ int cnt = 0;
     		return 0;
     	}
     }
+
+//
+
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int z = 0; z < t; z++) {
+            int n = sc.nextInt();
+            int m = sc.nextInt();
+            ArrayList<ArrayList<Integer>> neigh = new ArrayList<ArrayList<Integer>>();
+            for (int i = 0; i < n; i++)
+                neigh.add(new ArrayList<Integer>());
+            for (int i = 0; i < m; i++) {
+                int u = sc.nextInt()-1;
+                int v = sc.nextInt()-1;
+                neigh.get(u).add(v);
+                neigh.get(v).add(u);
+            }
+            long[] adds = new long[n+1];
+            for (int i = 2; i <= n; i++) {
+                adds[i] = adds[i-1] + ((long)i)*(i-1);
+            }
+            ArrayList<Integer> cycles = new ArrayList<Integer>();
+            boolean[] vis = new boolean[n];
+            for (int i = 0; i < n; i++) {
+                if (!vis[i]) {
+                    int clen = 1;
+                    vis[i] = true;
+                    ArrayDeque<Integer> qu = new ArrayDeque<Integer>();
+                    qu.add(i);
+                    while (!qu.isEmpty()) {
+                        int u = qu.removeFirst();
+                        for (int v : neigh.get(u)) {
+                            if (!vis[v]) {
+                                clen++;
+                                qu.add(v);
+                                vis[v] = true;
+                            }
+                        }
+                    }
+                    cycles.add(clen);
+                }
+            }
+            long ans = 0;
+            Collections.sort(cycles);
+            int index = 0;
+            for (int i = cycles.size()-1; i >= 0; i--) {
+                int c = cycles.get(i);
+                ans += adds[c];
+                index += c-1;
+                ans += ((long)c)*(c-1)*(m-index);
+            }
+            System.out.println(ans);
+        }
+    }
+}
