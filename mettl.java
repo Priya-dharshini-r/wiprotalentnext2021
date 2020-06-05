@@ -37,40 +37,99 @@ int result=0;
   total=a+b;
   return total;
 }
+5.//N is Exact multiple of M
+  
+  int value=0;
+  if(input1==0||input2==0)value=3;
+else if
+  (input1%input2)!=0
+  value=1;
+return value;
 
-5.//og 5 how many even
+7.//og 5 how many even
   
-  int n=nput1=input2=input3=input4=input5;
-for(int i=0;i<n;i++)
-{
-  if(input1%2==0=input2%2==0=input3%2==0=input4%2==0=input5%2==0)
-  {
-return 3;
-  }
-  else
-  {
-return 2;
-  }
-}
-return 3;
-}
-}
+ int c=0;
 
-6.//og 5 how many odd
+  if(input1<0)input1=(-1)*input1;
+  if(input2<0)input1=(-1)*input1;
+  if(input3<0)input1=(-1)*input1;
+  if(input4<0)input1=(-1)*input1;
+  if(input5<0)input1=(-1)*input1;
+  if(input1%2==0)
+  c++;
+  if(input2%2==0)
+  c++;
+  if(input3%2==0)
+  c++;
+  if(input4%2==0)
+  c++;
+  if(input5%2==0)
+  c++;
+
+8.//of 5 how many odd
+  int c=0;
+
+  if(input1<0)input1=(-1)*input1;
+  if(input2<0)input1=(-1)*input1;
+  if(input3<0)input1=(-1)*input1;
+  if(input4<0)input1=(-1)*input1;
+  if(input5<0)input1=(-1)*input1;
+  if(input1%2!=0)
+  c++;
+  if(input2%2!=0)
+  c++;
+  if(input3%2!=0)
+  c++;
+  if(input4%2!=0)
+  c++;
+  if(input5%2!=0)
+  c++;
+
+return c++;
   
+  9.//of 5 how many are odd or even
   
-  int n=nput1=input2=input3=input4=input5;
-for(int i=0;i<n;i++)
+  int c=0;
+if(input6.equalsIgnoreCase("odd"))
 {
-  if(input1%2==1=input2%2==1=input3%2==1=input4%2==1=input5%2==1)
-  {
-return 3;
-  }
-  else
-  {
-return 2;
-  }
+  if(input1<0)input1=(-1)*input1;
+  if(input2<0)input1=(-1)*input1;
+  if(input3<0)input1=(-1)*input1;
+  if(input4<0)input1=(-1)*input1;
+  if(input5<0)input1=(-1)*input1;
+  if(input1%2!=0)
+  c++;
+  if(input2%2!=0)
+  c++;
+  if(input3%2!=0)
+  c++;
+  if(input4%2!=0)
+  c++;
+  if(input5%2!=0)
+  c++;
 }
-return 3;
+else if(input6.equalsIgnoreCase("Even"))
+{
+  if(input6.equalsIgnoreCase("Even"))
+  if(input1<0)input1=(-1)*input1;
+  if(input2<0)input1=(-1)*input1;
+  if(input3<0)input1=(-1)*input1;
+  if(input4<0)input1=(-1)*input1;
+  if(input5<0)input1=(-1)*input1;
+  if(input1%2==0)
+  c++;
+  if(input2%2==0)
+  c++;
+  if(input3%2==0)
+  c++;
+  if(input4%2==0)
+  c++;
+  if(input5%2==0)
+  c++;
+}
+return c;
 }
 }
+  
+  
+  
