@@ -37,3 +37,21 @@ int result=0;
   total=a+b;
   return total;
 }
+
+5.//
+  
+  int n=nput1=input2=input3=input4=input5;
+for(int i=0;i<n;i++)
+{
+  if(input1%2==0=input2%2==0=input3%2==0=input4%2==0=input5%2==0)
+  {
+return 3;
+  }
+  else
+  {
+return 2;
+  }
+}
+return 3;
+}
+}
