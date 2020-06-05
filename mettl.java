@@ -38,12 +38,31 @@ int result=0;
   return total;
 }
 
-5.//
+5.//og 5 how many even
   
   int n=nput1=input2=input3=input4=input5;
 for(int i=0;i<n;i++)
 {
   if(input1%2==0=input2%2==0=input3%2==0=input4%2==0=input5%2==0)
+  {
+return 3;
+  }
+  else
+  {
+return 2;
+  }
+}
+return 3;
+}
+}
+
+6.//og 5 how many odd
+  
+  
+  int n=nput1=input2=input3=input4=input5;
+for(int i=0;i<n;i++)
+{
+  if(input1%2==1=input2%2==1=input3%2==1=input4%2==1=input5%2==1)
   {
 return 3;
   }
