@@ -1,0 +1,24 @@
+//Nth prime
+
+int a=2;
+int b=0,i,c=0;
+int prime=0;
+while(b<=input1)
+{
+for(int i=2;i<a/2;i++)
+{
+if(a%i==0)
+{
+c++;
+}
+}
+if(c==0)
+{
+b++;
+prime=a;
+}
+a++;
+c=0;
+}
+return prime;
+}
