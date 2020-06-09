@@ -46,3 +46,53 @@ class Result {
 }
 
 public class Solution {
+
+    
+    .//Bob Maze
+        
+        import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Result {
+
+    /*
+     * Complete the 'minMoves' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. 2D_INTEGER_ARRAY maze
+     *  2. INTEGER x
+     *  3. INTEGER y
+     */
+
+    public static int minMoves(List<List<Integer>> maze, int x, int y) {
+    // Write your code here
+    int i; 
+  
+    
+    for (i = k - 1; i < n; i++) 
+        if (arr[i] != arr[k - 1]) 
+            return -1; 
+  
+     
+    for (i = k - 1; i >= 0; i--) 
+        if (arr[i] != arr[k - 1]) 
+            return i + 1; 
+  
+    
+    return 0; 
+} 
+  
+
+    }
+
+
+
+public class Solution {
