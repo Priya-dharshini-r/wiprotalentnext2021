@@ -78,3 +78,67 @@ class Result {
 }
 
 public class Solution {
+    
+    2.//
+        
+        import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+
+
+class Result {
+
+    /*
+     * Complete the 'isPangram' function below.
+     *
+     * The function is expected to return a STRING.
+     * The function accepts STRING_ARRAY pangram as parameter.
+     */
+
+    public static String isPangram(List<String> pangram) {
+    // Write your code here
+    boolean[] mark = new boolean[26]; 
+  
+        // For indexing in mark[] 
+        int index = 0; 
+  
+        // Traverse all characters 
+        for (int i = 0; i < str.length(); i++) { 
+            // If uppercase character, subtract 'A' 
+            // to find index. 
+            if ('A' <= str.charAt(i) && str.charAt(i) <= 'Z') 
+                index = str.charAt(i) - 'A'; 
+  
+            // If lowercase character, subtract 'a' 
+            // to find index. 
+            else if ('a' <= str.charAt(i) && str.charAt(i) <= 'z') 
+  
+                index = str.charAt(i) - 'a'; 
+  
+            // If this character is other than english 
+            // lowercase and uppercase characters. 
+            else
+                continue; 
+            mark[index] = true; 
+        } 
+  
+        // Return false if any character is unmarked 
+        for (int i = 0; i <= 25; i++) 
+            if (mark[i] == false) 
+                return (false); 
+  
+        // If all characters were present 
+        return (true); 
+    } 
+  
+
+    
+
+}
+
+public class Solution {
