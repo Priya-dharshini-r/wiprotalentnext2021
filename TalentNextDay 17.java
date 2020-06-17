@@ -25,3 +25,21 @@ public static String largestMagical(String S) {
             res.append(partitionedStrings.get(j));
         }
         return res.toString();
+    
+    2.//Fibbo
+        
+        List<Integer> l=new ArrayList<>();
+    int a=0;
+    int b=1;
+    int c;
+    l.add(a);
+    l.add(b);
+    for(int i=2;i<n;i++)
+    {
+        c=a+b;
+        a=b;
+        b=c;
+
+        l.add(c);
+    }
+    return l;
